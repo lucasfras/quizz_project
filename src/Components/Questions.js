@@ -1,6 +1,7 @@
 import React from 'react'
 import Answer from './Answer'
 import { nanoid } from 'nanoid'
+import Footer from "./Footer"
 
 
 
@@ -72,11 +73,15 @@ export default function Questions(props) {
     }
 
     return (
-        <div className="questions--main">
-            <h1>Questionary</h1>
-            {renderAnswers()}
-            <hr />
-            {props.finished ? <button className="check--button" onClick={props.restartGame}>Restart</button>: <button className="check--button" onClick={props.checkAnswers}>Check Answers</button>}
+        <div>
+            <div className="questions--main">
+                <h1>Questionary</h1>
+                {renderAnswers()}
+                <hr />
+                {props.finished ? <button className="check--button" onClick={props.restartGame}>Restart</button>: <button className="check--button" onClick={props.checkAnswers}>Check Answers</button>}
+            </div>
+            <br />
+            <Footer />
         </div>
     )
 }

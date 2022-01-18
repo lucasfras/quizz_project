@@ -62,7 +62,6 @@ function App() {
       return finalArray.push(questionObj);
     })
   setQuestions(finalArray)
-  console.log(finalArray)
   }
 
 
@@ -81,8 +80,6 @@ function App() {
         }
       }))
     }
-    console.log(whichquestion)
-    console.log(value)
 }
 
   function checkAnswers() {
@@ -92,7 +89,6 @@ function App() {
         correctCounter = correctCounter + 1;
       }
     }
-    console.log("checked answers")
     setFinished(true)
     return setCorrect(correctCounter)
   }

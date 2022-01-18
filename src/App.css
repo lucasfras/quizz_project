@@ -112,3 +112,29 @@ body {
   color: limegreen;
 }
 
+header {
+  padding: 10px 10px;
+  top: 0;
+  background-color: gray;
+  color: #f1f1f1;
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: gray;
+  color: white;
+  text-align: center;
+}
+
+
+.twitter--logo {
+  margin: auto 5px;
+}
+
+.github--logo {
+  margin: auto 5px;
+}
