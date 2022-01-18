@@ -118,9 +118,16 @@ function App() {
           restartGame={restartGame}
         />}
       {(correct >= 0 && correct < 5) && 
-        <h1 className="score--counter">You scored {correct}/5 questions</h1>}
-      {correct === 5 && 
+        <div>
+        <h1 className="score--counter">You scored {correct}/5 questions</h1>
+        <br />
+        </div>
+        }
+      {correct === 5 &&
+      <div>
         <h1 className="score--counter">Congratulations you owned the quizz!!!</h1>
+      <br />
+      </div>
       }
       {correct === 5 && 
         <Confetti />
